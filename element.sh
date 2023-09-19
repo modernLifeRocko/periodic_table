@@ -1,5 +1,5 @@
 #!/bin/bash
-# get info from periodic table 
+# Program to get information on elements from the periodic table 
 PSQL="psql -X --username=freecodecamp --dbname=periodic_table -t --no-align -c"
 PRINT_FROM_NUMBER () {
 	echo "$($PSQL "SELECT name, symbol, atomic_mass, melting_point_celsius, boiling_point_celsius, type FROM elements
